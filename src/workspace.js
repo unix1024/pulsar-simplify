@@ -4,12 +4,12 @@ const PanelContainer = require('./panel-container');
 module.exports = class Workspace {
   constructor(){
 
-    this.paneContainers = {
-      center: this.createCenter(),
-      left: null,
-      right: null,
-      bottom: null
-    };
+    // this.paneContainers = {
+    //   center: this.createCenter(),
+    //   left: null,
+    //   right: null,
+    //   bottom: null
+    // };
 
     this.panelContainers = {
       top: new PanelContainer({
@@ -41,7 +41,7 @@ module.exports = class Workspace {
     return this.element;
   }
 
-  createCenter() {
-    return new WorkspaceCenter();
-  }
+  // createCenter() {
+  //   return new WorkspaceCenter();
+  // }
 }
