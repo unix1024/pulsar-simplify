@@ -1,0 +1,16 @@
+"filename", "language", "JavaScript", "comment", "blank", "total"
+"d:\06project\electron-quick-start\src\atom-environment.js", "JavaScript", 18, 0, 5, 23
+"d:\06project\electron-quick-start\src\get-window-load-settings.js", "JavaScript", 8, 0, 3, 11
+"d:\06project\electron-quick-start\src\initialize-application-window.js", "JavaScript", 11, 0, 6, 17
+"d:\06project\electron-quick-start\src\main-process\atom-application.js", "JavaScript", 30, 24, 21, 75
+"d:\06project\electron-quick-start\src\main-process\atom-window.js", "JavaScript", 48, 1, 8, 57
+"d:\06project\electron-quick-start\src\main-process\main.js", "JavaScript", 19, 0, 5, 24
+"d:\06project\electron-quick-start\src\main-process\parse-command-line.js", "JavaScript", 225, 11, 25, 261
+"d:\06project\electron-quick-start\src\main-process\start.js", "JavaScript", 27, 0, 5, 32
+"d:\06project\electron-quick-start\src\panel-container-element.js", "JavaScript", 17, 3, 7, 27
+"d:\06project\electron-quick-start\src\panel-container.js", "JavaScript", 15, 0, 4, 19
+"d:\06project\electron-quick-start\src\style-element.js", "JavaScript", 14, 0, 6, 20
+"d:\06project\electron-quick-start\src\style-manager.js", "JavaScript", 0, 0, 1, 1
+"d:\06project\electron-quick-start\src\workspace-element.js", "JavaScript", 50, 6, 19, 75
+"d:\06project\electron-quick-start\src\workspace.js", "JavaScript", 32, 0, 5, 37
+"Total", "-", 514, 45, 120, 679
