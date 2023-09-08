@@ -4,7 +4,6 @@ const WorkspaceCenter = require('./workspace-center');
 
 module.exports = class Workspace {
   constructor(params){
-
     this.viewRegistry = params.viewRegistry;
 
     this.paneContainers = {

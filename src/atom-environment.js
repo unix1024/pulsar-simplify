@@ -32,7 +32,6 @@ class AtomEnvironment {
 
     this.stylesElement = this.styles.buildStylesElement();
     this.document.head.appendChild(this.stylesElement);
-
   }
 
   startEditorWindow(){
