@@ -25,17 +25,13 @@ class WorkspaceElement extends HTMLElement{
     this.appendChild(this.horizontalAxis);
   }
 
-  // static get observedAttributes() {
-  //   return ['name', 'country'];
-  // }
-
-  // attributeChangedCallback(name, oldValue, newValue) {
-  //   console.log(`Attribute ${name} changed from ${oldValue} to ${newValue}`);
-  // }
-
+  // 利用model，进行Dom节点的布局，生成DOM
   initialize(model){
     this.model = model;
     this.initializeContent();
+
+    this.paneContainer = this.model.getCenter().paneContainer.getElement();
+    this.verticalAxis.appendChild(this.paneContainer);
 
     this.panelContainers = {
       top: this.model.panelContainers.top.getElement(),
@@ -52,7 +48,10 @@ class WorkspaceElement extends HTMLElement{
     );
     this.horizontalAxis.appendChild(this.panelContainers.right);
     
-    this.verticalAxis.appendChild(this.panelContainers.top);
+    this.verticalAxis.insertBefore(
+      this.panelContainers.top,
+      this.paneContainer
+    );
     this.verticalAxis.appendChild(this.panelContainers.bottom);
     
     this.insertBefore(this.panelContainers.header, this.horizontalAxis);

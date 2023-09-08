@@ -2,16 +2,22 @@ const Workspace = require('./workspace');
 const StyleManager = require('./style-manager');
 const ThemeManager = require('./theme-manager');
 const getWindowLoadSettings = require('./get-window-load-settings');
+const ViewRegistry = require('./view-registry');
 
 class AtomEnvironment {
   constructor(){
+
+    this.views = new ViewRegistry(this);
+    
     this.styles = new StyleManager();
 
     this.themes = new ThemeManager({
       styleManager: this.styles
     });
 
-    this.workspace = new Workspace();
+    this.workspace = new Workspace({
+      viewRegistry: this.views
+    });
   }
 
   initialize(params = {}){
