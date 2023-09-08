@@ -33,20 +33,10 @@ class AtomEnvironment {
     this.stylesElement = this.styles.buildStylesElement();
     this.document.head.appendChild(this.stylesElement);
 
-    // const didChangeStyles = this.didChangeStyles.bind(this);
-
-    // this.styles.onDidAddStyleElement(didChangeStyles);
   }
 
   startEditorWindow(){
     document.body.appendChild(this.workspace.getElement());
-  }
-
-  didChangeStyles(styleElement) {
-    TextEditor.didUpdateStyles();
-    if (styleElement.textContent.indexOf('scrollbar') >= 0) {
-      TextEditor.didUpdateScrollbarStyles();
-    }
   }
 }
 
